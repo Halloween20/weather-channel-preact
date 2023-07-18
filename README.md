@@ -1,5 +1,7 @@
 This is just a simple play around with preact. I like to make something I'm familiar with so I chose the old 90's Weather Channel local on the '8s screen to try to recreate. I don't own any of the fonts or images used here.
 
+View it live here: [https://zfghterb721.github.io/weather-channel-preact/]
+
 ## To Run
 
 clone this repo then inside the directory run:
