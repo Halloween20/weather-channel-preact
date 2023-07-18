@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'StarJR';
+    src: local('StarJR'), url(./fonts/StarJR.ttf) format('truetype');
+} 
+
+@font-face {
+    font-family: 'WeatherChannel';
+    src: local('WeatherChannel'), url(./fonts/Star3000.ttf) format('truetype');
+} 
+
+@font-face {
+    font-family: 'WeatherChannelClock';
+    src: local('WeatherChannel'), url(./fonts/Star4000_Large.ttf) format('truetype');
+} 
+
+/*define custome color wcBlue 253768*/
+
+:root {
+    --wcBlue: #253768;
+    --wcdarkBlue: #190f50;
+    --wcOrange: #c6681a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, #app{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    margin-top: auto;
+}

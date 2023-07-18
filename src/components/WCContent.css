@@ -1,0 +1,22 @@
+div.WCContent {
+  background: linear-gradient(to bottom, var(--wcdarkBlue), var(--wcOrange));
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+div.WCContent > div.main {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: top left;
+  padding: 1em;
+  font-size: xx-large;
+  background-color: var(--wcBlue);
+  color: white;
+  font-family: "StarJR";
+  box-shadow: 0 0 15px 10px var(--wcBlue);
+  clip-path: inset(0px -15px 0px -15px);
+}

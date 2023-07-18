@@ -1,0 +1,96 @@
+:root {
+    --header-height: 5em;
+    --header-image-size: 6em;
+}
+
+
+header.WCHeader {
+    background: linear-gradient(to bottom, var(--wcOrange), var(--wcdarkBlue));
+    height: var(--header-height);
+    color: #FFFF00;
+    font-family: 'StarJR';
+    padding-bottom: 0px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 0px;
+    display: flex;
+}
+
+div.blueTopBar {
+    background-color: var(--wcdarkBlue);
+    height: 30px;
+    width: 100vw;
+    z-index: 1;
+}
+
+div.gradientOverlay {
+    background-image: -webkit-linear-gradient(-30deg, rgba(0,0,0,0) 90%, var(--wcdarkBlue) 10%);
+    height: calc(var(--header-height) + 23px);
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+}
+
+header.WCHeader > div.logo {
+    background-color: white;
+    border-radius: 25%;
+    height: var(--header-image-size);
+    z-index: 3;
+}
+
+header.WCHeader > div.logo > img {
+    height: var(--header-image-size);
+}
+
+header.WCHeader > div.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header.WCHeader > div.main > div.titleArea{
+    display: flex;
+    flex-direction: row;
+}
+
+header.WCHeader > div.title {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: var(--header-height);
+    align-items: top;
+}
+
+header.WCHeader a {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+
+}
+
+header.WCHeader a.title {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+header.WCHeader a.subtitle {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 1.2em;
+}
+
+header.WCHeader div.datetime {
+    font-family: 'WeatherChannelClock';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    font-size: .8em;
+}

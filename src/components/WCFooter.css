@@ -1,0 +1,9 @@
+footer.WCFooter {
+    background-color: var(--wcBlue);
+    color: white;
+    font-family: 'StarJR';
+    font-size: xx-large;
+    border-top: .1em solid #e6e6e6;
+    height: 4em;
+    padding-left: 3em;
+}
