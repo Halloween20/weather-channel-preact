@@ -6,12 +6,19 @@ import { WCContent } from './components/WCContent';
 import { WCFooter } from './components/WCFooter';
 
 export function App() {
-	const [count, setCount] = useState(0);
+	const [message, setMessage] = useState("WINDS WILL BE NORTH AROUND 10 MPH");
+	//update message from url params
+	const urlParams = new URLSearchParams(window.location.search);
+	const messageParam = urlParams.get('message');
+	if (messageParam) {
+		setMessage(messageParam);
+	}
+
 
 	return (
 		<>
 		<WCHeader />
-		<WCContent />
+		<WCContent message={message} />
 		<WCFooter />
 		</>
 	);
