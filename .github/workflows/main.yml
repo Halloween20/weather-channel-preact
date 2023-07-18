@@ -4,6 +4,9 @@ on:
     - main
 jobs:
   build_app:
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
     name: Build preact app
     runs-on: ubuntu-latest
     steps:
